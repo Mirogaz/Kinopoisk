@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    position: relative;
+
+    width: 300px;
+    height: 400px;
+
+    margin: 30px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__poster {
+        width: 200px;
+        height: 350px;
+
+        margin-top: 15px;
+    }
+
+    &__rate {
+        position: absolute;
+        z-index: 10;
+        top: 8px;
+        right: 40px;
+
+        width: 50px;
+        height: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 3px;
+
+        background-color: rgb(228, 194, 0);
+        font-size: 13px;
+        color: white;
+
+        border: 1px solid rgb(228, 194, 0);
+        border-radius: 10px;
+    }
+
+}
