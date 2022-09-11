@@ -6,10 +6,10 @@ const PaginationComponent: FC<UsePaginationReturn> = ({page, totalPages, prevPag
 
     return (
         <div className="pagination">
-                <p className="text">
+                <p className="pagination__text">
                 {page}/{totalPages}
                 </p>
-                <button onClick={prevPage} className="page">
+                <button onClick={prevPage} className="pagination__button">
                 &larr;
                 </button>
                 {/* @ts-ignore */}
@@ -17,12 +17,12 @@ const PaginationComponent: FC<UsePaginationReturn> = ({page, totalPages, prevPag
                 <button
                     onClick={() => setPage(el + 1)}
                     key={el}
-                    className={`page ${page === el + 1 ? "active" : ""}`}
+                    className={`pagination__button ${page === el + 1 ? "active" : ""}`}
                 >
                     {el + 1}
                 </button>
                 ))}
-                <button onClick={nextPage} className="page">
+                <button onClick={nextPage} className="pagination__button">
                 &rarr;
             </button>
       </div>
