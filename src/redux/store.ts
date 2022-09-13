@@ -1,9 +1,11 @@
+import paginationReducer from './reducer/PaginationSlice';
 import cinemaReducer from './reducer/CinemaSlice';
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 
 const rootReducer = combineReducers({
-    cinemaReducer
+    cinemaReducer,
+    paginationReducer
 })
 
 export const setupStore = () => {
